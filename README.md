@@ -33,11 +33,12 @@ Dataset5 contains 160 datasets for train and 80 datasets for test.
 Dataset6 contains half of the available data split into train/test 80%/20%.
 
 
-Dataset   Description                 Trial Number  Train/Test
-1         Benchmark                   1 & 2         80%/20%
-2         Screw Size Independency     3             80%/20%
-3         Screw Head Independency     4             80%/20%
-4         Sparse Dataset1             5             20%/80%
-5         Sparse Dataset2             6             160/80 datasets
-6         Sparse Dataset3/Half Data   7             80%/20%
+|Dataset   |Description                 |Trial Number  |Train/Test       |
+|----------|----------------------------|--------------|-----------------|
+|1         |Benchmark                   |1 & 2         |80%/20%          |
+|2         |Screw Size Independency     |3             |80%/20%          |
+|3         |Screw Head Independency     |4             |0%/20%           |
+|4         |Sparse Dataset1             |5             |20%/80%          |
+|5         |Sparse Dataset2             |6             |160/80 datasets  |
+|6         |Sparse Dataset3/Half Data   |7             |80%/20%          |
 
