@@ -3,7 +3,7 @@
 ## Dataset Structure
 
 The different datasets contain train and test data. The train and test data is split by lables into loesbar (detachable) and nicht_loesbar (non_detachable). 
-One dataset contains different key values that provide information about e.g. type of the screw, used tourque, ... The keyparameter tourque values lists the meassured tourque in equidistant intervalls.
+Each dataset represents one unscrewing process and contains different key values that provide information about e.g. type of the screw, used tourque. The keyparameter tourque values lists the meassured tourque in equidistant intervalls.
 
 |Dataset   |Description                 |Trial Number  |Train/Test       |
 |:--------:|----------------------------|:------------:|-----------------|
