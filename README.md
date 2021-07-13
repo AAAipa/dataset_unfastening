@@ -3,17 +3,19 @@
 ## Dataset Structure
 
 The different datasets contain train and test data. The train and test data is split by lables into loesbar (detachable) and nicht_loesbar (non_detachable). 
+One dataset contains different key values that provide information about e.g. type of the screw, used tourque, ... The keyparameter tourque values lists the meassured tourque in equidistant intervalls.
 
 |Dataset   |Description                 |Trial Number  |Train/Test       |
 |:--------:|----------------------------|:------------:|-----------------|
 |1         |Benchmark                   |1 & 2         |80%/20%          |
 |2         |Screw Size Independency     |3             |80%/20% (M4,M5/M6,M8)|
-|3         |Screw Head Independency     |4             |0%/20% (torx, hexagon socket/ cross, hexagon head)|
+|3         |Screw Head Independency     |4             |80%/20% (torx, hexagon socket/ cross, hexagon head)|
 |4         |Sparse Dataset1             |5             |20%/80%          |
 |5         |Sparse Dataset2             |6             |160/80 datasets  |
 |6         |Sparse Dataset3/Half Data   |7             |80%/20%          |
 
-
+## Used Hardware
+Nexo radio cordless screwdriver NXP
 
 ## Acknowledgement
 Sponsored by the Ministry of the Environment Baden-Württemberg, in the context of the Strategic Dialogue Automotive Industry, and supervised by the Project Management Agency Karlsruhe (PTKA). Funding number: L7520101
