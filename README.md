@@ -7,8 +7,22 @@
 
 ## Dataset Structure
 
-The different datasets contain train and test data. The train and test data is split by lables into loesbar (detachable) and nicht_loesbar (non_detachable). 
-Each dataset represents one unscrewing process and contains different key values that provide information about e.g. type of the screw, used tourque. The keyparameter tourque values lists the meassured tourque in equidistant intervalls.
+The different datasets contain two folders. They contain train and test data. The train and test data is split by lables into loesbar (detachable) and nicht_loesbar (non_detachable) in each folder. 
+Each json file contains the data of one unscrewing process and contains different key values that provide information about the unscrewing process. 
+
+## Key parameter
+The tourque can be optained with following python code:
+path = data path
+with open(path) as f:
+            df = json.loads(f.read())
+torque = np.array(df['tightening steps'][0]['graph']['torque values'][0:self.sequence_length])
+The corresponding angle values have euqidistand steps of 5.32°.
+
+The file also contains other important keyvalues:
+* df['prg name']: screw type
+* df['tightening steps']['torque']: max tourque
+* df['tightening steps']['speed']: max speed
+
 
 |Dataset   |Description                 |Trial Number  |Train/Test       |
 |:--------:|----------------------------|:------------:|-----------------|
@@ -20,7 +34,7 @@ Each dataset represents one unscrewing process and contains different key values
 |6         |Sparse Dataset3/Half Data   |7             |80%/20%          |
 
 ## Used Hardware
-Nexo radio cordless screwdriver NXP
+Nexo NXP
 
 ## Acknowledgement
 Sponsored by the Ministry of the Environment Baden-Württemberg, in the context of the Strategic Dialogue Automotive Industry, and supervised by the Project Management Agency Karlsruhe (PTKA). Funding number: L7520101
