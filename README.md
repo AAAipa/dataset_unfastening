@@ -19,6 +19,7 @@ torque = np.array(df['tightening steps'][0]['graph']['torque values'][0:self.seq
 The corresponding angle values have euqidistand steps of 5.320°.
 
 |![dataset overview](canvas.jpg "The dataset overview")|
+|:---:|
 |test|
 
 The file also contains other important keyvalues:
