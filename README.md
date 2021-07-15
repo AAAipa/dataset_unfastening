@@ -10,6 +10,10 @@ This repo contains the data used in paper XXXXXXXXX published in XXXXXXXX on XX.
 The different datasets each contain two folders. These folders contain train and test data. The train and test data is split by lables into loesbar (releasable) and nicht_loesbar (non_releasable) in each folder. 
 Each json file contains the data of one unscrewing process and contains different key values that provide information about the unscrewing process. 
 
+|![dataset overview](canvas.jpg "The dataset overview")|
+|:---:|
+|The dataset overview|
+
 ## Key parameter
 The tourque can be optained with following python code:
 path = data path
@@ -17,10 +21,6 @@ with open(path) as f:
             df = json.loads(f.read())
 torque = np.array(df['tightening steps'][0]['graph']['torque values'][0:self.sequence_length])
 The corresponding angle values have euqidistand steps of 5.320°.
-
-|![dataset overview](canvas.jpg "The dataset overview")|
-|:---:|
-|The dataset overview|
 
 The file also contains other important keyvalues:
 * df['prg name']: screw type
