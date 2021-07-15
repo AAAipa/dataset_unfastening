@@ -16,7 +16,9 @@ path = data path
 with open(path) as f:
             df = json.loads(f.read())
 torque = np.array(df['tightening steps'][0]['graph']['torque values'][0:self.sequence_length])
-The corresponding angle values have euqidistand steps of 5.32°.
+The corresponding angle values have euqidistand steps of 5.320°.
+
+![Alt-Text](canvas.png "test")
 
 The file also contains other important keyvalues:
 * df['prg name']: screw type
@@ -28,7 +30,7 @@ The file also contains other important keyvalues:
 |:--------:|----------------------------|:------------:|-----------------|
 |1         |Benchmark                   |1 & 2         |80%/20%          |
 |2         |Screw Size Independency     |3             |80%/20% (M4,M5/M6,M8)|
-|3         |Screw Head Independency     |4             |80%/20% (torx, hexagon socket/ cross, hexagon head)|
+|3         |Screw Head Independency     |4             |80%/20% (Torx, E. Hexagon/ Philips, I. Hexagon)|
 |4         |Sparse Dataset1             |5             |20%/80%          |
 |5         |Sparse Dataset2             |6             |160/80 datasets  |
 |6         |Sparse Dataset3/Half Data   |7             |80%/20%          |
