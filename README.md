@@ -2,12 +2,12 @@
 
 ## Introduction
 
-
+This repo contains the data used in paper XXXXXXXXX published in XXXXXXXX on XX.XX.XXXX.
 
 
 ## Dataset Structure
 
-The different datasets contain two folders. They contain train and test data. The train and test data is split by lables into loesbar (detachable) and nicht_loesbar (non_detachable) in each folder. 
+The different datasets each contain two folders. These folders contain train and test data. The train and test data is split by lables into loesbar (releasable) and nicht_loesbar (non_releasable) in each folder. 
 Each json file contains the data of one unscrewing process and contains different key values that provide information about the unscrewing process. 
 
 ## Key parameter
