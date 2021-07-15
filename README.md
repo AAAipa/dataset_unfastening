@@ -20,7 +20,7 @@ The corresponding angle values have euqidistand steps of 5.320°.
 
 |![dataset overview](canvas.jpg "The dataset overview")|
 |:---:|
-|test|
+|The dataset overview|
 
 The file also contains other important keyvalues:
 * df['prg name']: screw type
