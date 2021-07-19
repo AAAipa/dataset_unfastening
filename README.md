@@ -40,6 +40,20 @@ The file also contains other important keyvalues:
 ## Used Hardware
 Bosch Rexroth Nexo NXP
 
+## Reference:
+```
+@article{alassadi2021,
+  author  = {}, 
+  title   = {Machine learning based detection approach for unscrewing operations},
+  journal = {},
+  year    = 2021,
+  number  = 2,
+  pages   = {201-213},
+  month   = 7,
+  volume  = 4
+}
+```
+
 ## Acknowledgement
 Sponsored by the Ministry of the Environment Baden-Württemberg, in the context of the Strategic Dialogue Automotive Industry, and supervised by the Project Management Agency Karlsruhe (PTKA). Funding number: L7520101
 
