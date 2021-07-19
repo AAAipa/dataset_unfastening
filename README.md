@@ -38,7 +38,7 @@ The file also contains other important keyvalues:
 |6         |Sparse Dataset3/Half Data   |7             |80%/20%          |
 
 ## Used Hardware
-Nexo NXP
+Bosch Rexroth Nexo NXP
 
 ## Acknowledgement
 Sponsored by the Ministry of the Environment Baden-Württemberg, in the context of the Strategic Dialogue Automotive Industry, and supervised by the Project Management Agency Karlsruhe (PTKA). Funding number: L7520101
