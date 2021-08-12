@@ -38,13 +38,14 @@ The file also contains other important keyvalues:
 |6         |Sparse Dataset3/Half Data   |7             |80%/20%          |
 
 ## Used Hardware
-Bosch Rexroth Nexo NXP
+Bosch Rexroth Nexo NXP for manual unscrewing operations
+MINIMAT ®-EC-SERVO and deprag AST40 for the robot-based unscrewing operations
 
 ## Reference:
 ```
 @article{alassadi2021,
   author  = {}, 
-  title   = {Machine learning based detection approach for unscrewing operations},
+  title   = {TODO},
   journal = {},
   year    = 2021,
   number  = 2,
