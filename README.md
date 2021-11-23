@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repo contains the data used in paper XXXXXXXXX published in XXXXXXXX on XX.XX.XXXX.
+This repo contains the data set, which have been used for the CCN-based detection of rounded screw drives.
 
 
 ## Dataset Structure
