@@ -2,12 +2,13 @@
 
 ## Introduction
 
-This repo contains the data set, which have been used for the CCN-based detection of rounded screw drives.
+This repo contains the data set, which has been used for the CCN-based detection of rounded screw drives.
 
 
 ## Dataset Structure
 
-The different datasets each contain two folders. These folders contain train and test data. The train and test data is split by lables into loesbar (releasable) and nicht_loesbar (non_releasable) in each folder. 
+Each of the different datasets contains two subfolders, one containing training data and the other containing test data.
+The train and test data is split by lables into `loesbar` (releasable) and `nicht_loesbar` (non_releasable) in each folder. 
 Each json file contains the data of one unscrewing process and contains different key values that provide information about the unscrewing process. 
 
 |![dataset overview](canvas.jpg "The dataset overview")|
@@ -16,16 +17,20 @@ Each json file contains the data of one unscrewing process and contains differen
 
 ## Key parameter
 The tourque can be optained with following python code:
-path = data path
+
+```python
+path = 'your-path-to-the-dataset'
 with open(path) as f:
-            df = json.loads(f.read())
+   df = json.loads(f.read())
 torque = np.array(df['tightening steps'][0]['graph']['torque values'][0:self.sequence_length])
-The corresponding angle values have euqidistand steps of 5.320°.
+```
+
+The corresponding angle values have equidistant steps of 5.320°.
 
 The file also contains other important keyvalues:
-* df['prg name']: screw type
-* df['tightening steps']['torque']: max tourque
-* df['tightening steps']['speed']: max speed
+* `df['prg name']`: screw type
+* `df['tightening steps']['torque']`: max tourque
+* `df['tightening steps']['speed']`: max speed
 
 
 |Dataset   |Description                 |Trial Number  |Train/Test       |
@@ -42,7 +47,7 @@ Bosch Rexroth Nexo NXP for manual unscrewing operations
 MINIMAT ®-EC-SERVO and deprag AST40 for the robot-based unscrewing operations
 
 ## Reference:
-```
+```bibtex
 @article{alassadi2021,
   author  = {}, 
   title   = {TODO},
