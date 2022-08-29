@@ -48,15 +48,17 @@ MINIMAT ®-EC-SERVO and deprag AST40 for the robot-based unscrewing operations
 
 ## Reference:
 ```bibtex
-@article{alassadi2021,
-  author  = {}, 
-  title   = {TODO},
-  journal = {},
-  year    = 2021,
-  number  = 2,
-  pages   = {201-213},
-  month   = 7,
-  volume  = 4
+@article{ALASSADI202219,
+title = {Machine learning based screw drive state detection for unfastening screw connections},
+journal = {Journal of Manufacturing Systems},
+volume = {65},
+pages = {19-32},
+year = {2022},
+issn = {0278-6125},
+doi = {https://doi.org/10.1016/j.jmsy.2022.07.013},
+url = {https://www.sciencedirect.com/science/article/pii/S0278612522001248},
+author = {Anwar {Al Assadi} and David Holtz and Frank Nägele and Christof Nitsche and Werner Kraus and Marco F. Huber},
+keywords = {Screws, Machine learning, Neural networks, Unfastening, Disassembly, Battery systems}
 }
 ```
 
