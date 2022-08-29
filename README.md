@@ -1,8 +1,6 @@
 # dataset_unscrewing
 
-## Introduction
-
-This repo contains the data set, which has been used for the CCN-based detection of rounded screw drives.
+This repo contains the data set, which has been used in the technical paper [Machine learning based screw drive state detection for unfastening screw connections](https://doi.org/10.1016/j.jmsy.2022.07.013) published in Journal of Manufacturing Systems, Volume 65, October 2022.
 
 ## Dataset Structure
 
@@ -66,7 +64,7 @@ keywords = {Screws, Machine learning, Neural networks, Unfastening, Disassembly,
 
 ## License
 
-This work is licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/).
+This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
 
 ```yaml
 SPDX-License-Identifier: CC-BY-4.0
@@ -76,4 +74,4 @@ SPDX-License-Identifier: CC-BY-4.0
 
 Sponsored by the Ministry of the Environment Baden-Württemberg, in the context of the Strategic Dialogue Automotive Industry, and supervised by the Project Management Agency Karlsruhe (PTKA). Funding number: L7520101
 
-https://www.ipa.fraunhofer.de/de/referenzprojekte/DeMoBat.html
+Link zur Projektseite: [Industrielle Demontage von Batteriemodulen und E-Motoren DeMoBat](https://www.ipa.fraunhofer.de/de/referenzprojekte/DeMoBat.html)
