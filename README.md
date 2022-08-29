@@ -1,21 +1,19 @@
 # dataset_unscrewing
 
-## Introduction
-
-This repo contains the data set, which has been used for the CCN-based detection of rounded screw drives.
-
+This repo contains the data set, which has been used in the technical paper [Machine learning based screw drive state detection for unfastening screw connections](https://doi.org/10.1016/j.jmsy.2022.07.013) published in Journal of Manufacturing Systems, Volume 65, October 2022.
 
 ## Dataset Structure
 
 Each of the different datasets contains two subfolders, one containing training data and the other containing test data.
-The train and test data is split by lables into `loesbar` (releasable) and `nicht_loesbar` (non_releasable) in each folder. 
-Each json file contains the data of one unscrewing process and contains different key values that provide information about the unscrewing process. 
+The train and test data is split by lables into `loesbar` (releasable) and `nicht_loesbar` (non_releasable) in each folder.
+Each json file contains the data of one unscrewing process and contains different key values that provide information about the unscrewing process.
 
-|![dataset overview](canvas.jpg "The dataset overview")|
-|:---:|
-|The dataset overview|
+| ![dataset overview](canvas.jpg "The dataset overview") |
+| :----------------------------------------------------: |
+|                  The dataset overview                  |
 
 ## Key parameter
+
 The tourque can be optained with following python code:
 
 ```python
@@ -28,25 +26,27 @@ torque = np.array(df['tightening steps'][0]['graph']['torque values'][0:self.seq
 The corresponding angle values have equidistant steps of 5.320°.
 
 The file also contains other important keyvalues:
-* `df['prg name']`: screw type
-* `df['tightening steps']['torque']`: max tourque
-* `df['tightening steps']['speed']`: max speed
 
+- `df['prg name']`: screw type
+- `df['tightening steps']['torque']`: max tourque
+- `df['tightening steps']['speed']`: max speed
 
-|Dataset   |Description                 |Trial Number  |Train/Test       |
-|:--------:|----------------------------|:------------:|-----------------|
-|1         |Benchmark                   |1 & 2         |80%/20%          |
-|2         |Screw Size Independency     |3             |80%/20% (M4,M5/M6,M8)|
-|3         |Screw Head Independency     |4             |80%/20% (Torx, E. Hexagon/ Philips, I. Hexagon)|
-|4         |Sparse Dataset1             |5             |20%/80%          |
-|5         |Sparse Dataset2             |6             |160/80 datasets  |
-|6         |Sparse Dataset3/Half Data   |7             |80%/20%          |
+| Dataset | Description               | Trial Number | Train/Test                                      |
+| :-----: | ------------------------- | :----------: | ----------------------------------------------- |
+|    1    | Benchmark                 |    1 & 2     | 80%/20%                                         |
+|    2    | Screw Size Independency   |      3       | 80%/20% (M4,M5/M6,M8)                           |
+|    3    | Screw Head Independency   |      4       | 80%/20% (Torx, E. Hexagon/ Philips, I. Hexagon) |
+|    4    | Sparse Dataset1           |      5       | 20%/80%                                         |
+|    5    | Sparse Dataset2           |      6       | 160/80 datasets                                 |
+|    6    | Sparse Dataset3/Half Data |      7       | 80%/20%                                         |
 
 ## Used Hardware
+
 Bosch Rexroth Nexo NXP for manual unscrewing operations
 MINIMAT ®-EC-SERVO and deprag AST40 for the robot-based unscrewing operations
 
-## Reference:
+## Reference
+
 ```bibtex
 @article{ALASSADI202219,
 title = {Machine learning based screw drive state detection for unfastening screw connections},
@@ -62,9 +62,16 @@ keywords = {Screws, Machine learning, Neural networks, Unfastening, Disassembly,
 }
 ```
 
+## License
+
+This work is licensed under a [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/) license.
+
+```yaml
+SPDX-License-Identifier: CC-BY-4.0
+```
+
 ## Acknowledgement
+
 Sponsored by the Ministry of the Environment Baden-Württemberg, in the context of the Strategic Dialogue Automotive Industry, and supervised by the Project Management Agency Karlsruhe (PTKA). Funding number: L7520101
 
-https://www.ipa.fraunhofer.de/de/referenzprojekte/DeMoBat.html
-
-
+Link zur Projektseite: [Industrielle Demontage von Batteriemodulen und E-Motoren DeMoBat](https://www.ipa.fraunhofer.de/de/referenzprojekte/DeMoBat.html)
